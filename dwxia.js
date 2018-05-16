@@ -10,9 +10,9 @@ return showPic(this) ? false:true;}}}
 function showPic(whichpic){
 if(!document.getElementById("dwx33")) return false;
 var source = whichpic.getElementById("href");
-var placeholder = document.getElementById ("dwx33");
-if (placeholder.nodeName !="IMG") return false;
-placeholder.setAttribute("src",source);
+var dwx33 = document.getElementById ("dwx33");
+if (dwx33.nodeName !="IMG") return false;
+dwx33.setAttribute("src",source);
 if(!document.getElementById("description")){
 var text = whichpic.getAttribute("title")? whichpic.getAttribute ("title"):"";
 var description = document.getElementById("description");
